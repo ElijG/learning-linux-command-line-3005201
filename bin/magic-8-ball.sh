@@ -22,4 +22,6 @@ read -p "Ask the 8-Ball a question and press Enter: "
 echo "Shaking the 8-Ball..."
 NUM_ANSWERS=${#ANSWERS[@]}
 RANDOM_INDEX=$(( RANDOM % NUM_ANSWERS ))
-echo "8-BALL SAYS: ${ANSWERS[RANDOM_INDEX]}"
+echo "8-BALL SAYS:"
+sleep 5
+echo "${ANSWERS[RANDOM_INDEX]}"
